@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>App</title>
+</head>
+<body>
+
+<p><a href="/">HOME PAGE</a></p>
+
+
+<form method="GET">
+
+    <label>First name:</label> <br>
+    <label><input type="text" name="firstname"></label> <br><br>
+
+    <label>Last name:</label> <br>
+    <label><input type="text" name="lastname"></label> <br><br>
+
+    <input type="submit" value="SUBMIT">
+
+</form>
+
+
+<div>
+{% if list %}
+    <p>First name: {{ list['first_name'] }}</p>
+    <p>Last name: {{ list['last_name'] }}</p>
+{% endif %}
+</div>
+
+</body>
+</html>
